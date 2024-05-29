@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <script src="/static/js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+</head>
+<body>
+
+<form id="form-checkout" action="/process_payment" method="post">
+    <div>
+        <div>
+            <label for="form-checkout__payerFirstName">Nombre</label>
+            <input id="form-checkout__payerFirstName" name="payerFirstName" type="text">
+        </div>
+        <div>
+            <label for="form-checkout__payerLastName">Appelido</label>
+            <input id="form-checkout__payerLastName" name="payerLastName" type="text">
+        </div>
+        <div>
+            <label for="form-checkout__email">E-mail</label>
+            <input id="form-checkout__email" name="email" type="text">
+        </div>
+        <div>
+            <label for="form-checkout__identificationType">Tipo de documento</label>
+            <select id="form-checkout__identificationType" name="identificationType" type="text"></select>
+        </div>
+        <div>
+            <label for="form-checkout__identificationNumber">Número del documento</label>
+            <input id="form-checkout__identificationNumber" name="identificationNumber" type="text">
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <input type="hidden" name="transactionAmount" id="transactionAmount" value="100">
+            <input type="hidden" name="description" id="description" value="Nome do Produto">
+            <br>
+            <button type="submit">Pagar</button>
+        </div>
+    </div>
+</form>
+<div id="payment-result" style="display:none;">
+    <a id="boleto-link" target="_blank">Pagar con factura</a>
+</div>
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#form-checkout {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+#form-checkout h2 {
+    margin-bottom: 1.5rem;
+    color: #007bff;
+    text-align: center;
+}
+
+#form-checkout div {
+    margin-bottom: 1rem;
+}
+
+#form-checkout label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+#form-checkout input[type="text"],
+#form-checkout input[type="email"],
+#form-checkout select {
+    width: calc(100% - 1rem);
+    padding: 0.5rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+#form-checkout input[type="text"]:focus,
+#form-checkout input[type="email"]:focus,
+#form-checkout select:focus {
+    border-color: #007bff;
+}
+
+#form-checkout button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#form-checkout button:hover {
+    background-color: #0056b3;
+}
+
+#payment-result {
+    display: none;
+    margin-left: 300px;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#boleto-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#boleto-link:hover {
+    text-decoration: underline;
+}
