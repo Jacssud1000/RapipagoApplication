@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const mp = new MercadoPago("APP_USR-d4349c5e-706e-41dd-ac28-1b0a70884b52");
+    const mp = new MercadoPago("TEST-81afd90f-e86a-4e9c-8d45-0925f879cec5");
 
     (async function getIdentificationTypes () {
         try {

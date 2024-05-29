@@ -24,7 +24,7 @@ import org.springframework.stereotype.Service;
 public class RapipagoService {
   public ResponsePaymentDto payment(@Valid PaymentDto paymentDto) {
     try {
-      MercadoPagoConfig.setAccessToken("APP_USR-4186747889975909-052910-4eefa0f3845688188e6d9f3761d23960-1832581269");
+      MercadoPagoConfig.setAccessToken("TEST-4186747889975909-052910-0e4b064c0169021f8f0cb02b98119c93-1832581269");
 
       PaymentMethodClient client = new PaymentMethodClient();
 
@@ -45,7 +45,7 @@ public class RapipagoService {
       customHeaders.put("x-idempotency-key", UUID.randomUUID().toString());
 
       MPRequestOptions requestOptions = MPRequestOptions.builder()
-          .accessToken("APP_USR-4186747889975909-052910-4eefa0f3845688188e6d9f3761d23960-1832581269")
+          .accessToken("TEST-4186747889975909-052910-0e4b064c0169021f8f0cb02b98119c93-1832581269")
           .customHeaders(customHeaders).build();
 
       PaymentClient clients = new PaymentClient();
