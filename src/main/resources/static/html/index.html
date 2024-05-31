@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<form id="form-checkout" action="/process_payment" method="post">
+<form id="form-checkout">
     <div>
         <div>
             <label for="form-checkout__payerFirstName">Nombre</label>
@@ -37,7 +37,7 @@
             <input type="hidden" name="transactionAmount" id="transactionAmount" value="100">
             <input type="hidden" name="description" id="description" value="Nome do Produto">
             <br>
-            <button type="submit">Pagar</button>
+            <button type="submit" id="btPayment">Pagar</button>
         </div>
     </div>
 </form>
